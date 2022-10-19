@@ -1,0 +1,8 @@
+<p>posts works!</p>
+
+<ul class="list-group">
+    <li *ngfor="let mensaje of mensajes | async" class="list-group-item">
+        <h2>{{ mensaje.title }}</h2>
+        <p> {{ mensaje.body }}</p>
+    </li>
+</ul>
